@@ -1,0 +1,24 @@
+{
+  "enable_cpu": {
+    "description": "启用 CPU 监控",
+    "type": "bool",
+    "default": true
+  },
+  "enable_mem": {
+    "description": "启用 内存 监控",
+    "type": "bool",
+    "default": true
+  },
+  "enable_net": {
+    "description": "启用 网络流量 监控",
+    "type": "bool",
+    "default": true,
+    "hint": "在 Android/Proot 环境下若报错可尝试关闭。"
+  },
+  "enable_disk": {
+    "description": "启用 磁盘空间 监控",
+    "type": "bool",
+    "default": true,
+    "hint": "会自动跳过重复挂载点和无权限路径。"
+  }
+}
